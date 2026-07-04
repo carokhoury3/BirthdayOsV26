@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 26</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="birthdayMusic" loop>
+        <source src="Music/shake.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="loadingScreen">
+        <h1>BirthdayOS</h1>
+        <p>Identity Verification Required</p>
+
+        <input type="number" id="ageInput" placeholder="Enter your age">
+
+        <button onclick="verifyAge()">Verify</button>
+
+        <p id="error"></p>
+    </div>
+
+    <div class="stars"></div>
+
+    <div class="floating f1">🩺</div>
+    <div class="floating f2">💗</div>
+    <div class="floating f3">🏔️</div>
+    <div class="floating f4">🏋️</div>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <h1>MISSION 26: BIRTHDAY PROTOCOL</h1>
+        <h2>26</h2>
+        <p>For my favorite person on earth</p>
+
+        <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            Enter Birthday Experience
+        </button>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="card">
+            <h2>Happy 26th Birthday, Didi 💕</h2>
+
+            <p>
+                Today is your day, and I wanted to show you how much you are loved
+                and how much you make my life and our lives better every day 💕
+            </p>
+        </div>
+
+        <h2>You are so much more than just one thing... ✨</h2>
+
+        <div class="cards">
+
+          <div class="card small-card" onclick="openRolePhoto('images/didinurse.jpg')">
+
+    <h3>🩺 Nurse</h3>
+
+    <p>
+        Je suis tellement fière de la future infirmière que tu deviens.
+        T'as toujours pris soin des autres sans même t'en rendre compte.
+        Tes patients sont tellement chanceux de t'avoir 💕💕
+    </p>
+
+    <button class="view-btn">
+        📸 VIEW MEMORY
+    </button>
+
+</div>
+<div class="card small-card" onclick="openRolePhoto('images/hiking.jpg')">
+    <h3>🏔️ Hiker</h3>
+
+    <p>
+        I hope you never stop chasing the next high, because that's where your happiest smile always seems to be.
+        I may judge how carefree you are, but I also admire that so much about you.
+        I wish I had your guts and I love you 🏔️
+    </p>
+
+    <button class="view-btn">
+        ✨ UNLOCK MEMORY
+    </button>
+</div>
+
+<div class="card small-card" onclick="openRolePhoto('images/caroetdidi.jpg')">
+    <h3>💖 Sister</h3>
+
+    <p>
+        Joyeux anniversaire, mon adulte ❤️, je voulais que tu saches que tu es mon exception.
+        Il n'y a aucune des limites personnelles que je mets avec les autres qui existent avec toi.
+        Tu es mon remède dans chaque période difficile, et tu es aussi ce qui me fait continuer.
+        I love you so much. I genuinely wouldn't be here without you.
+        You're my anchor, the one who keeps me grounded.
+        Je t'aime plus que les mots peuvent le dire, et je suis tellement chanceuse de pouvoir t'appeler ma sœur ❤️
+        <br><br>
+        - Caro
+    </p>
+
+    <button class="view-btn">
+        ✨ UNLOCK MEMORY
+    </button>
+</div>
+
+<div class="card small-card" onclick="openRolePhoto('images/didi et antoine 1.jpg')">
+    <h3>💍 Girlfriend</h3>
+
+    <p>
+        Joyeux anniversaire à ma Didi en or. Je te souhaite une journée aussi belle que toi.
+        3abel el 100 habibte, je t'aime fort, Didi Laure ❤️
+        <br>
+        - Tony
+    </p>
+
+    <button class="view-btn">
+        ✨ UNLOCK MEMORY
+    </button>
+</div>
+
+<div class="card small-card" onclick="openRolePhoto('images/mometdidi.jpg')">
+    <h3>🌷 Daughter</h3>
+
+    <p>
+        Joyeux 26e anniversaire, mon amour. ❤️
+        Tu es mon plus beau cadeau et je suis tellement fière de la femme extraordinaire que tu es devenue.
+        Je te souhaite une vie remplie de bonheur, de santé et d’amour.
+        Je t’aime infiniment.
+        <br>
+        — Maman
+    </p>
+
+    <button class="view-btn">
+        ✨ UNLOCK MEMORY
+    </button>
+</div>
+
+<div class="card small-card" onclick="openRolePhoto('images/arietdidi.jpg')">
+    <h3>👭 Friend</h3>
+
+    <p>
+        Ma bestie baddie de mon cœur, 26 ans déjà, ayoye!
+        Qui aurait cru qu’on allait se rendre ici, mais nous voilà,
+        les neurospicy, plus spicy que jamais!
+        Je t’aime fort, n’oublie jamais xxx
+        <br>
+        - Arianne
+    </p>
+
+    <button class="view-btn">
+        ✨ UNLOCK MEMORY
+    </button>
+</div>
+
+<div class="card small-card" onclick="openRolePhoto('images/gabdidi1.jpg')">
+    <h3>🌸 Cousin</h3>
+
+    <p>
+        Bonne fête Didi! Je t’adore, tu es une personne tellement incroyable.
+        Après tout ce que tu as vécu, you’re still standing,
+        you still have a smile on your face every day and you never seem to give up.
+        I admire you every day for your courage.
+        I love spending time with you and I can’t wait to have more memories 🤍
+        Bref, je t'aime Didi, t'es ma soeur et je ne pourrais jamais imaginer ma vie sans toi.
+        Profite mon amour ❤️
+        <br>
+        - Gabie
+    </p>
+
+    <button class="view-btn">
+        ✨ UNLOCK MEMORY
+    </button>
+</div>
+
+    <!-- MEMORY WALL -->
+
+<section>
+
+    <h2>Didi's Memory Wall 💌</h2>
+
+    <p class="memory-hint">
+        ✨ Click on any memory to reveal its hidden Polaroid message ✨
+    </p>
+
+    <div class="gallery">
+
+        <img src="images/baddiedidi1.jpg" class="photo"
+            onclick="openPostIt('images/baddiedidi1.jpg', `Ma baddie à moi qui chante brisquement du Taylor Swift dans mes oreilles ❤️`)">
+
+        <img src="images/gabdidi2.jpg" class="photo"
+            onclick="openPostIt('images/gabdidi2.jpg', `Je t’adore, tu es une personne tellement incroyable ✨ <br> - Gabie`)">
+
+        <img src="images/zack.jpg" class="photo"
+            onclick="openPostIt('images/zack.jpg', `Bonne fête ma Didi, déjà 4 années de plus que cette sortie, le temps passe vite! Profite de la vie!!`)">
+
+        <img src="images/didi2.jpg" class="photo"
+            onclick="openPostIt('images/didi2.jpg', `Mon clown préféré ❤️ <br> - Caro`)">
+
+        <img src="images/didicaro3.jpg" class="photo"
+            onclick="openPostIt('images/didicaro3.jpg', `To have you in my corner is a blessing 💖`)">
+
+        <img src="images/carodidi4.jpg" class="photo"
+            onclick="openPostIt('images/carodidi4.jpg', `Every moment spent with you hypes me up for the next one 💕 <br> - Caro`)">
+
+        <img src="images/tetadidi1.JPG" class="photo"
+            onclick="openPostIt('images/tetadidi1.JPG', `Tu veux manger quoi la semaine prochaine? 🤍`)">
+
+        <img src="images/didijm2.JPG" class="photo"
+            onclick="openPostIt('images/didijm2.JPG', ``)">
+
+        <img src="images/papadidi.jpg" class="photo"
+            onclick="openPostIt('images/papadidi.jpg', `Hayatiiii ❤️`)">
+
+        <img src="images/noahdidi.jpg" class="photo"
+            onclick="openPostIt('images/noahdidi.jpg', `Happy birthday didi! Thanks for being such an amazing cousin of mine! I love you and wish the best for you! ❤️❤️ <br> - Noah`)">
+
+        <img src="images/sab.jpg" class="photo"
+            onclick="openPostIt('images/sab.jpg', `Bonne fête Audrey! Comme je suis contente de t'avoir dans ma vie. Aventures, rires, follitudes, j'attends toujours la prochaine avec impatience. Continue de rayonner, l'audreyonnance c'est inné en toi, comme je t'aime ❤️❤️ <br> - Sab`)">
+
+        <img src="images/didicaro5.JPG" class="photo"
+            onclick="openPostIt('images/didicaro5.JPG', `Just wanted to let you know, you're stuck with me for life 💕 <br> - Caro`)">
+
+        <img src="images/lescouz.JPG" class="photo"
+            onclick="openPostIt('images/lescouz.JPG', ``)">
+
+        <img src="images/momdidi.jpg" class="photo"
+            onclick="openPostIt('images/momdidi.jpg', `Le premier amour inconditionnel de maman 🤍`)">
+
+        <img src="images/didibaday.jpg" class="photo"
+            onclick="openPostIt('images/didibaday.jpg', `Surtout ne change jamais, reste toujours la Didi compassionnelle, drôle et empathique qu'on aime. On t'aime fort Didi ❤️ <br> - Kiki`)">
+
+        <img src="images/didicaro6.jpg" class="photo"
+            onclick="openPostIt('images/didicaro6.jpg', `Home isn't a place, it's a person 💖 <br> - Caro`)">
+           
+           
+        <img src="images/tya.jpg" class="photo"
+            onclick="openPostIt('images/tya.jpg', `Bonne fête Didi 🎉
+Même si on ne se voit plus souvent depuis l’adolescence, je garde de très beaux souvenirs de notre enfance ensemble. Nos étés au parc Safari, nos sorties au cinéma et nos fêtes me reviennent encore en tête 😊 Tu as toujours été drôle, gentille et pleine d’énergie — et surtout quelqu’un qui prend des nouvelles !`)">
+
+
+    </div>
+
+</section>
+
+    <!-- HEARTBEAT -->
+
+    <section class="heartbeat-section">
+        <div class="card heartbeat-card">
+            <h2>Heartbeat Check 🩺</h2>
+            <p>Because your heart is one of the strongest and kindest things about you that I admire 💕</p>
+
+            <div class="ecg-line">
+                <svg viewBox="0 0 600 120">
+                    <polyline
+                        points="0,60 80,60 100,60 120,20 145,100 170,60 260,60 280,60 300,25 325,95 350,60 600,60" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIRTHDAY STATS -->
+
+    <section>
+
+        <div class="card">
+
+            <h2>Birthday Stats ✨</h2>
+
+            <div class="stats">
+                <div class="card stat">26 Years</div>
+                <div class="card stat">∞ Laughs</div>
+                <div class="card stat">1000+ Lives Touched</div>
+                <div class="card stat">Countless Adventures</div>
+                <div class="card stat">Swiftie at Heart</div>
+                <div class="card stat">Gym Rat Energy</div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- BIRTHDAY WISH -->
+
+<section class="wish-section">
+
+    <div class="card wish-card">
+
+        <h2>Make a Birthday Wish ✨</h2>
+
+        <p>
+            Close your eyes.  
+            Make one birthday wish.  
+            When you're ready, click the button.
+        </p>
+
+        <button onclick="makeWish()">
+            🌷 I Made My Wish
+        </button>
+
+        <div id="wishMessage"></div>
+
+    </div>
+
+</section>
+<!-- ONE LAST QUESTION -->
+
+<section class="question-section">
+
+    <div class="card question-card">
+
+        <h2>One Last Question... 💖</h2>
+
+        <p class="question-text">
+            Can I keep being your little sister forever?
+        </p>
+
+        <div class="answer-buttons">
+
+            <button onclick="answerQuestion()">
+                ❤️ Yes
+            </button>
+
+            <button onclick="answerQuestion()">
+                💖 Of Course
+            </button>
+
+            <button onclick="answerQuestion()">
+                🌸 Always
+            </button>
+
+        </div>
+
+        <div id="answerResult"></div>
+
+    </div>
+
+</section>
+    <!-- FINAL MESSAGE -->
+
+    <section class="final">
+
+        <div class="card">
+
+            <h2>One Last Message 💖</h2>
+
+            <p>
+                Happy 26th Birthday, Didi.
+                <br><br>
+
+                Merci Didi d'avoir été ce que j'avais besoin pour chaque étape de ma vie.
+                Je t'aime pour tout ce que tu es et tout ce que tu fais.
+                Tu es une personne incroyable et je suis tellement chanceuse de t'avoir dans ma vie.
+
+                <br><br>
+
+                I love you forever. ❤️
+            </p>
+
+            <br>
+
+            <button onclick="showSurprise()">
+                🎉 Launch Birthday Surprise
+            </button>
+
+            <div id="surprise">
+                <h2>🎉 HAPPY 26TH BIRTHDAY DIDI 🎉</h2>
+
+                <p>
+                    Thank you for being the amazing person you are.
+                    <br>
+                    I love you forever. 💕
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PHOTO MODAL -->
+
+    <div id="photoModal" class="photo-modal" onclick="closeRolePhoto()">
+        <span class="close">&times;</span>
+        <img id="modalPhoto" src="" alt="Photo">
+    </div>
+
+    <!-- POLAROID / POST-IT MODAL -->
+
+    <div id="postItModal" class="postit-modal" onclick="closePostIt()">
+        <div class="postit" onclick="event.stopPropagation()">
+            <span class="postit-close" onclick="closePostIt()">&times;</span>
+            <img id="postItPhoto" src="" alt="Memory photo">
+            <p id="postItMessage"></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        function makeWish() {
+    const message = document.getElementById("wishMessage");
+    const music = document.getElementById("birthdayMusic");
+
+    message.innerHTML = "✨ Wish saved. I hope every dream comes true for you, Didi 💖";
+
+    if (music.volume < 0.7) {
+        music.volume = 0.7;
+    }
+
+    for (let i = 0; i < 80; i++) {
+        let sparkle = document.createElement("div");
+
+        sparkle.innerHTML = Math.random() > 0.5 ? "✨" : "🌸";
+        sparkle.style.position = "fixed";
+        sparkle.style.left = Math.random() * 100 + "vw";
+        sparkle.style.top = "-30px";
+        sparkle.style.fontSize = (Math.random() * 20 + 18) + "px";
+        sparkle.style.animation = "fall 4s linear forwards";
+        sparkle.style.zIndex = "9999";
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(() => {
+            sparkle.remove();
+        }, 4000);
+    }
+}
+
+        function openPostIt(photo, message) {
+            document.getElementById("postItPhoto").src = photo;
+            document.getElementById("postItMessage").innerHTML = message;
+            document.getElementById("postItModal").style.display = "flex";
+        }
+
+        function closePostIt() {
+            document.getElementById("postItModal").style.display = "none";
+        }
+
+        function openRolePhoto(photo) {
+            document.getElementById("modalPhoto").src = photo;
+            document.getElementById("photoModal").style.display = "flex";
+        }
+
+        function closeRolePhoto() {
+            document.getElementById("photoModal").style.display = "none";
+        }
+
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+
+            for (let i = 0; i < 100; i++) {
+                let heart = document.createElement("div");
+
+                heart.innerHTML = Math.random() > 0.5 ? "💖" : "✨";
+
+                heart.style.position = "fixed";
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.top = "-30px";
+                heart.style.fontSize = (Math.random() * 20 + 18) + "px";
+                heart.style.animation = "fall 4s linear forwards";
+                heart.style.zIndex = "9999";
+
+                document.body.appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 4000);
+            }
+        }
+
+        function startExperience() {
+            const music = document.getElementById("birthdayMusic");
+            const loading = document.getElementById("loadingScreen");
+
+            music.volume = 0.35;
+            music.play();
+
+            loading.style.opacity = "0";
+
+            setTimeout(() => {
+                loading.style.display = "none";
+            }, 1000);
+        }
+
+        function verifyAge() {
+            const age = document.getElementById("ageInput").value;
+            const error = document.getElementById("error");
+
+            error.className = "";
+            error.style.color = "";
+
+            if (age === "26") {
+                error.classList.add("birthdayMessage");
+
+                error.innerHTML = `
+                    🌸 Happy 26th Birthday, Didi 🌸<br>
+                    Welcome to your birthday experience ♡
+                `;
+
+                setTimeout(() => {
+                    startExperience();
+                }, 2500);
+
+            } else {
+                error.classList.remove("birthdayMessage");
+                error.style.color = "#ff8aa8";
+
+                if (Number(age) < 26) {
+                    error.innerHTML = "⏳ Not yet... your birthday hasn't arrived!";
+                } else if (Number(age) > 26) {
+                    error.innerHTML = "😂 Nice try... you're not 27 yet!";
+                } else {
+                    error.innerHTML = "❌ Please enter your age.";
+                }
+            }
+        }
+function answerQuestion() {
+
+    const result = document.getElementById("answerResult");
+
+    result.innerHTML = `
+        🥹 Best answer.<br>
+        I love you forever, Didi. ❤️
+    `;
+
+    for(let i = 0; i < 40; i++){
+
+        let heart = document.createElement("div");
+
+        heart.innerHTML = Math.random() > 0.5 ? "💖" : "🌸";
+
+        heart.style.position = "fixed";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.top = "-20px";
+        heart.style.fontSize = (18 + Math.random() * 14) + "px";
+        heart.style.animation = "fall 3.5s linear forwards";
+        heart.style.zIndex = "9999";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 3500);
+
+    }
+
+}
+    </script>
+
+</body>
+
+</html>
