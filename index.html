@@ -21,16 +21,47 @@
         <source src="Music/shake.mp3" type="audio/mpeg">
     </audio>
 
-    <div id="loadingScreen">
-        <h1>BirthdayOS</h1>
-        <p>Identity Verification Required</p>
+   <h1>BirthdayOS <span class="version">v26.0</span></h1>
 
-        <input type="number" id="ageInput" placeholder="Enter your age">
+<p class="build">
+    Audrey Build • 07.04.2026
+</p>
 
-        <button onclick="verifyAge()">Verify</button>
+<div class="system-status">
 
-        <p id="error"></p>
+    <p><strong>System Status</strong></p>
+
+    <div class="loading-bar">
+        <div class="loading-fill"></div>
     </div>
+
+    <div class="boot-list">
+
+        <p>✓ Memories Loaded</p>
+        <p>✓ Adventures Loaded</p>
+        <p>✓ Family Connected</p>
+        <p>✓ Taylor Swift Playlist Loaded</p>
+        <p>✓ Happiness Initialized</p>
+
+    </div>
+
+</div>
+
+<p class="verify-title">
+    🔐 Identity Verification Required
+</p>
+
+<input
+    type="number"
+    id="ageInput"
+    placeholder="Enter access code..."
+>
+
+<button onclick="verifyAge()">
+    🚀 Boot BirthdayOS
+</button>
+
+<p id="error"></p>
 
     <div class="stars"></div>
 
